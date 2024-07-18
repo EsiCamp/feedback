@@ -20,7 +20,8 @@ export default defineNuxtConfig({
       },
     },
   },
+  css: ["~/assets/css/main.css"],
   components: {
-    dirs: ["~/components", "~/components/Structure"],
+    dirs: ["~/components"],
   },
 });
