@@ -12,7 +12,25 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
+    "@nuxtjs/i18n",
   ],
+  i18n: {
+    locales: [
+      {
+        code: "fa",
+        iso: "fa-IR",
+        name: "Persian",
+        file: "locales/fa/index.js",
+      },
+      {
+        code: "en",
+        iso: "en-US",
+        name: "English",
+        file: "locales/en/index.js",
+      },
+    ],
+    defaultLocale: "fa",
+  },
   vite: {
     vue: {
       template: {
