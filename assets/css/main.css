@@ -1,10 +1,7 @@
-* {
-  direction: rtl;
-}
-
 html,
 body {
   font-family: "IRANSansWeb", sans-serif;
+  direction: var(--direction, ltr);
 }
 
 @font-face {

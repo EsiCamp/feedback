@@ -1,4 +1,5 @@
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
@@ -19,17 +20,22 @@ export default defineNuxtConfig({
       {
         code: "fa",
         iso: "fa-IR",
-        name: "Persian",
-        file: "locales/fa/index.js",
+        name: "فارسی",
+        file: "fa/index.js",
+        dir: "rtl",
       },
       {
         code: "en",
         iso: "en-US",
         name: "English",
-        file: "locales/en/index.js",
+        file: "en/index.js",
+        dir: "ltr",
       },
     ],
+    defaultDirection: "rtl",
     defaultLocale: "fa",
+    detectBrowserLanguage: false,
+    langDir: "./locales/",
   },
   vite: {
     vue: {
